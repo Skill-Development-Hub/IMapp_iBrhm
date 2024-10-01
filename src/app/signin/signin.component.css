@@ -1,7 +1,31 @@
+mat-toolbar {
+  background-color: #da1b47;
+  color: white;
+  margin-bottom: 100px;
+  display: flex;  /* Use flexbox for layout */
+  align-items: center;  /* Vertically center the items */
+}
+
+.example-icon {
+  padding: 0;  /* Remove default padding */
+  margin-right: 10px;  /* Add space between icon and text */
+}
+
+.custom-icon {
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.toolbar-title {
+  font-family: 'Franklin Gothic Medium';
+  margin-left: 10px; /* Optional: adjust as necessary */
+}
+
 .example-spacer {
-    flex: 1 1 auto;
-  }
-  
+  flex: 1; /* This will push the title to the left */
+}
 
   .sign-in-container {
     max-width: 400px;
@@ -16,3 +40,6 @@
     width: 100%;
   }
   
+  button[type=submit]{
+    margin: 20px;
+  }

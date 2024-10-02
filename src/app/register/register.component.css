@@ -34,9 +34,18 @@ mat-toolbar {
   }
 
   .full-width {
-    width: 100%; /* Make form fields take the full width */
+    width: 50%; /* Make form fields take the full width */
     margin-bottom: 16px; /* Space between fields */
   }
   
-
+.registerbtn{
+  padding: 20px;
+  background-color: rgb(2, 85, 2) !important;
+  border-radius: 5%;
+}
+.register2btn{
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically (if needed) */
+}
 

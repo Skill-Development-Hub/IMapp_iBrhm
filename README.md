@@ -1,27 +1,39 @@
-# IMapp
+![Sign In page](./src/assets/ScreenShot1.PNG)
+![Register page](./src/assets/ScreenShot2.PNG)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.6.
 
-## Development server
+Institute Management application
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Number of Roles : 5 
+Student, Trainer, Stakeholder, Admin and staff(FOE) 
 
-## Code scaffolding
+Dashboard: 
+Dynamic dashboard would be needed which would be viewed by the stakeholders. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Tables: 
+Asian would be viewed by admin and would need dynamic tables where sorting and filtering will be done a lot 
+CSV and PDF download of the data would be done. 
 
-## Build
+This application would contain the following modules :
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Registration module 
+In this module they would be three steps 
+Registration, examination and final selection of student.
+In this module every student should be able to get a unique ID and this ID should be email to the student as well 
+A small entrance examination will be held 
+The once passing will go for the next round where admin will finally selected students 
+Trainer module: In this module trainer will be added with all details
+Batch module : Batches would be created by the admin and assign to the trainer 
+Attendance module: 
+Daily attendance would be carried out with by the trainer of the students 
+This attendance model would also consist of attendance of the employees of the
+Certification module 
+Final assessment a certificate should be automatically generated with students details 
+Assessment module: 
+Assessments would be created and data with assessments and students would be gathered 
+Job status module: 
+The front office executive would be checking with the job status of the students who have passed from our Institute and update this as well 
+Syllabus Tracking module: 
+In this module bi-weekly syllabus would be given by the trainer and tracking of this bi-weekly module would be the done by the trainer itself and admin would be monitoring it, in this module they would be attendance total number of students present in a class number of students absent and if the have any strong reason which classroom was this trainer taking the class, and the date on which class was taken 
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

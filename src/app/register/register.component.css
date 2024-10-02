@@ -42,6 +42,7 @@ mat-toolbar {
   padding: 20px;
   background-color: rgb(2, 85, 2) !important;
   border-radius: 5%;
+  
 }
 .register2btn{
   display: flex;

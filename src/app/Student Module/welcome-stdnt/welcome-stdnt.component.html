@@ -1,0 +1,53 @@
+<mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with custom image">
+      <img src="assets/images/sdhub.png" alt="SD Hub" class="custom-icon" />
+    </button>
+    <span class="toolbar-title">Welcome, {{studentName}}!</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon" id="profile" aria-label="Example icon-button with custom image"
+    (click)="navigateToLogout()">
+        <mat-icon aria-hidden="false" aria-label="Logout icon" >exit_to_app</mat-icon>
+      </button>
+  </mat-toolbar>
+
+
+  <div class="welcome-container">
+    <mat-card class="welcome-card">
+      <mat-card-title>Assalamualikum {{studentName}}</mat-card-title>
+      <mat-card-content>
+        <p>Your application is submitted, If you pass the entrance exam and selected</p>
+        <p>Your Student ID will be generated and the same will be also emailed to you.</p>
+      </mat-card-content>
+    </mat-card>
+  
+    <!-- <div class="navigation-buttons">
+      <button mat-raised-button color="accent">Start Your Journey</button>
+      <button mat-raised-button color="accent">Explore Resources</button>
+      <button mat-raised-button color="accent">Join Community Forum</button>
+    </div> -->
+  
+    <mat-card>
+      <mat-card-title>Upcoming Process</mat-card-title>
+      <mat-card-content>
+        <ul>
+          <li>Entrance Exam</li>
+          <li>Selection process</li>
+          <li>Classes Begin: [Date]</li>
+        </ul>
+      </mat-card-content>
+    </mat-card>
+  
+    <mat-card>
+      <!-- <mat-card-title>Quick Links</mat-card-title> -->
+      <mat-grid-list cols="3" rowHeight="2:1">
+        <mat-grid-tile><button mat-button>Course List</button></mat-grid-tile>
+        <mat-grid-tile><button mat-button>Holiday Calendar</button></mat-grid-tile>
+        <mat-grid-tile><button mat-button>Student Support</button></mat-grid-tile>
+      </mat-grid-list>
+    </mat-card>
+  </div>
+  
+  <!-- <mat-footer>
+    <p>Follow us on social media | Contact Us | Legal Disclaimer</p>
+  </mat-footer> -->
+  

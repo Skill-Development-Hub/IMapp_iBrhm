@@ -1,0 +1,41 @@
+mat-toolbar {
+    background-color: #da1b47;
+    color: white;
+    margin-bottom: 100px;
+    display: flex;  /* Use flexbox for layout */
+    align-items: center;  /* Vertically center the items */
+  }
+
+  .example-icon {
+    padding: 0;  /* Remove default padding */
+    margin-right: 10px;  /* Add space between icon and text */
+  }
+  
+  .custom-icon {
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    background-color: white;
+  }  
+  mat-icon {  
+      width: 100%; /* Make icon take full width */
+      height: 100%; /* Make icon take full height */
+      font-size: 40px;
+  }
+  #profile{
+    position: absolute; /* Allow positioning */
+    right: 0; /* Align to the right */
+    
+  }
+
+  .welcome-container{
+    margin: 10px;
+  }
+
+  mat-card{
+    margin:10px;
+    padding: 5px
+  }
+  mat-card:hover{
+    background-color: rgb(210, 209, 209);
+  }

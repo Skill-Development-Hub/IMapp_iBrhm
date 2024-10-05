@@ -1,29 +1,38 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms'; // Import FormsModule
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SigninComponent } from './signin/signin.component';
-import { RegisterComponent } from './register/register.component';
+import { SigninComponent } from './Student Module/signin/signin.component';
+import { RegisterComponent } from './Student Module/register/register.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 import { CommonModule } from '@angular/common';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatCardFooter } from '@angular/material/card';
 
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatCardModule } from '@angular/material/card';
+import { WelcomeStdntComponent } from './Student Module/welcome-stdnt/welcome-stdnt.component';
+
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatListModule } from '@angular/material/list';
+import { MatDialogModule } from '@angular/material/dialog';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SigninComponent,
-    RegisterComponent
+    RegisterComponent,
+    WelcomeStdntComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +41,11 @@ import { MatCardModule } from '@angular/material/card';
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
+    MatDialogModule,
+    MatListModule,
+    MatGridListModule,
+    MatCardFooter,
+    FormsModule,
 
     ReactiveFormsModule,
     MatInputModule,

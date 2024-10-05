@@ -1,5 +1,7 @@
 ![Sign In page](./src/assets/ScreenShot1.PNG)
 ![Register page](./src/assets/ScreenShot2.PNG)
+![Student Dashboard](./src/assets/ScreenShot3.PNG)
+
 
 
 **Institute Management application**

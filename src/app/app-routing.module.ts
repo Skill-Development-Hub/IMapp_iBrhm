@@ -9,7 +9,9 @@ const routes: Routes = [
   {path : '', redirectTo: 'signin', pathMatch : "full"},
   {path: 'signin', component : SigninComponent},
   {path : 'register', component: RegisterComponent},
-  {path : 'welcome-stdnt/:studentName', component : WelcomeStdntComponent}
+  {path : 'welcome-stdnt/:studentName', component : WelcomeStdntComponent},
+  {path : 'welcome-stdnt', component : WelcomeStdntComponent}
+
 ];
 
 @NgModule({

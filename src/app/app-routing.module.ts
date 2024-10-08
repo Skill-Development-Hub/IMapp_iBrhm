@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SigninComponent } from './Student Module/signin/signin.component';
-import { RegisterComponent } from './Student Module/register/register.component';
-import { WelcomeStdntComponent } from './Student Module/welcome-stdnt/welcome-stdnt.component';
+import { SigninComponent } from './Student_Module/signin/signin.component';
+import { RegisterComponent } from './Student_Module/register/register.component';
+import { WelcomeStdntComponent } from './Student_Module/welcome-stdnt/welcome-stdnt.component';
+import { StdPortalComponent } from './Student_Module/std-portal/std-portal.component';
 
 
 const routes: Routes = [
@@ -10,7 +11,8 @@ const routes: Routes = [
   {path: 'signin', component : SigninComponent},
   {path : 'register', component: RegisterComponent},
   {path : 'welcome-stdnt/:studentName', component : WelcomeStdntComponent},
-  {path : 'welcome-stdnt', component : WelcomeStdntComponent}
+  {path : 'welcome-stdnt', component : WelcomeStdntComponent},
+  {path : 'std-portal',component : StdPortalComponent}
 
 ];
 

@@ -25,12 +25,14 @@ export class SigninComponent {
 
       const {email,password} = this.signInForm.value;
 
-      if(this.checkCredentials(email,password)){
+      if(2==2){ //TEST -- this.checkCredentials(email,password)
       this.snackBar.open('Sign in successful!', 'Close', {
         duration: 2000, 
       });
 
-      this.router.navigate(['/welcome-stdnt']);
+      //this.router.navigate(['/welcome-stdnt']);
+      this.router.navigate(['/std-portal']);
+
     }
     else{
       this.snackBar.open('Invalid Email or Password.','Close',{

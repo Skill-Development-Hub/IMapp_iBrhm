@@ -31,6 +31,10 @@ import { MatListModule } from '@angular/material/list';
 import { MatDialogModule } from '@angular/material/dialog';
 import {MatStepperModule} from '@angular/material/stepper';
 
+import {ChangeDetectionStrategy} from '@angular/core';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {provideNativeDateAdapter} from '@angular/material/core';
+
 
 
 
@@ -65,14 +69,22 @@ import {MatStepperModule} from '@angular/material/stepper';
     MatButtonModule,
     MatStepperModule,
     FormsModule,
+    
     ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatDatepickerModule,
   ],
   providers: [
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
+    provideNativeDateAdapter(),
   ],
   exports: [SigninComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+
